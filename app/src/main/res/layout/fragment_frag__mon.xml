@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_scroll_switch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tile_background_1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".switch_scroll">
+
+
+        <LinearLayout
+            android:layout_width="374dp"
+            android:layout_height="874dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:checked="false"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="@string/period1"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches"
+                app:trackTintMode="src_in" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:checked="true"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:scrollbarSize="10dp"
+                android:text="@string/period2"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:checked="false"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="@string/period3"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="@string/period4"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="@string/period5"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="@string/period6"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="@string/period7"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="@string/period8"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="5dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="@string/period9"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

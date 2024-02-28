@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main_page2 strings -->
+
+    <string name="app_name">QuietTime</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="tablayout">Tab Layout of days</string>
+    <string name="tablayout_for_days">tablayout for days</string>
+    <string name="logo">logo</string>
+    <string name="add">ADD</string>
+    <string name="period1">09:00 To 09:50</string>
+    <string name="period2">09:55 To 10:45</string>
+    <string name="period3">10:55 To 11:45</string>
+    <string name="period4">11:50 To 12:40</string>
+    <string name="period5">12:45 To 01:35</string>
+    <string name="period6">01:45 To 02:35</string>
+    <string name="period7">02:40 To 03:30</string>
+    <string name="period8">03:40 To 04:30</string>
+    <string name="period9">04:35 To 05:25</string>
+</resources>

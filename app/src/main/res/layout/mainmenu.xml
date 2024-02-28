@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tile_background_1"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/vigaregular"
+        android:text="QuietTime"
+        android:textColor="#09051C"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_AppTitle">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutonoff"
+                android:layout_width="369dp"
+                android:layout_height="192dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:id="@+id/tableRow"
+                    android:layout_width="369dp"
+                    android:layout_height="130dp"
+                    android:layout_marginBottom="20dp"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_OnOff"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <ImageButton
+                        android:id="@+id/btnOnOffschedule"
+                        android:layout_width="75dp"
+                        android:layout_height="90dp"
+                        android:layout_marginVertical="35dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/onoff_btn_bg_red"
+                        android:contentDescription="schedule on off button on off"
+                        android:elevation="10dp"
+                        android:onClick="ScheduleOnOffListener"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/__img_time_button" />
+
+                    <ImageButton
+                        android:id="@+id/btnOnOffgeneralLocations"
+                        android:layout_width="75dp"
+                        android:layout_height="90dp"
+                        android:layout_marginVertical="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/onoff_btn_bg_red"
+                        android:contentDescription="General locations feature on off"
+                        android:elevation="10dp"
+                        android:onClick="LocationOnOffListener"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/__img_location_button" />
+
+                    <ImageButton
+                        android:id="@+id/btnOnOffgeoLocation"
+                        android:layout_width="75dp"
+                        android:layout_height="90dp"
+                        android:layout_marginVertical="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/onoff_btn_bg_red"
+                        android:contentDescription="pin a location feature on off"
+                        android:elevation="10dp"
+                        android:onClick="GFencingOnOffListener"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/__img_geo_fence_button" />
+
+                    <ImageButton
+                        android:id="@+id/btnOnOffwifi"
+                        android:layout_width="75dp"
+                        android:layout_height="90dp"
+                        android:layout_marginVertical="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/onoff_btn_bg_red"
+                        android:contentDescription="select a wifi feature on off"
+                        android:elevation="10dp"
+                        android:onClick="WifiOnOffListener"
+                        android:scaleType="fitXY"
+                        android:textAlignment="viewStart"
+                        app:srcCompat="@drawable/__img_wifi_button" />
+                </TableRow>
+
+                <ImageView
+                    android:id="@+id/rectangle_548"
+                    android:layout_width="6dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="24dp"
+                    android:contentDescription="rectangle_548"
+                    android:src="@drawable/rectangle_548"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_OnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/vigaregular"
+                    android:text="On / Off"
+                    android:textColor="#09051C"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangle_548"
+                    app:layout_constraintStart_toEndOf="@+id/rectangle_548"
+                    app:layout_constraintTop_toTopOf="@+id/rectangle_548" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutsetup"
+                android:layout_width="366dp"
+                android:layout_height="490dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayoutonoff"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/rectangle_5481"
+                    android:layout_width="6dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="24dp"
+                    android:contentDescription="rectangle_548"
+                    android:src="@drawable/rectangle_548"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_Setup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/vigaregular"
+                    android:text="Setup"
+                    android:textColor="#09051C"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rectangle_5481"
+                    app:layout_constraintStart_toEndOf="@+id/rectangle_5481"
+                    app:layout_constraintTop_toTopOf="@+id/rectangle_5481" />
+
+                <LinearLayout
+                    android:layout_width="367dp"
+                    android:layout_height="437dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_Setup">
+
+                    <Button
+                        android:id="@+id/btnSetupSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/setupboxbackground"
+                        android:drawableEnd="@drawable/setupbuttonsarrow"
+                        android:elevation="15dp"
+                        android:gravity="start|center_vertical"
+                        android:insetLeft="15dp"
+                        android:insetRight="15dp"
+                        android:onClick="ScheduleSetUpListener"
+                        android:padding="15dp"
+                        android:paddingHorizontal="25dp"
+                        android:text="SCHEDULE"
+                        android:textAllCaps="false"
+                        android:textColor="#09051C" />
+
+                    <Button
+                        android:id="@+id/btnSetupLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/setupboxbackground"
+                        android:drawableEnd="@drawable/setupbuttonsarrow"
+                        android:elevation="15dp"
+                        android:gravity="start|center_vertical"
+                        android:insetLeft="15dp"
+                        android:insetRight="15dp"
+                        android:onClick="LocationSetUpListener"
+                        android:padding="15dp"
+                        android:paddingHorizontal="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Locations"
+                        android:textColor="#09051C" />
+
+                    <Button
+                        android:id="@+id/btnSetupFencing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/setupboxbackground"
+                        android:drawableEnd="@drawable/setupbuttonsarrow"
+                        android:elevation="15dp"
+                        android:gravity="start|center_vertical"
+                        android:insetLeft="15dp"
+                        android:insetRight="15dp"
+                        android:onClick="GFencingSetUpListener"
+                        android:padding="15dp"
+                        android:paddingHorizontal="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Geo-Fencing"
+                        android:textColor="#09051C" />
+
+                    <Button
+                        android:id="@+id/btnSetupSchedule4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/setupboxbackground"
+                        android:drawableEnd="@drawable/setupbuttonsarrow"
+                        android:elevation="15dp"
+                        android:gravity="start|center_vertical"
+                        android:insetLeft="15dp"
+                        android:insetRight="15dp"
+                        android:onClick="WifiSetUpListener"
+                        android:padding="15dp"
+                        android:paddingHorizontal="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Wifi"
+                        android:textColor="#09051C" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

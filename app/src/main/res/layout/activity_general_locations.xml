@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tile_background_1"
+    tools:context=".GeneralLocations.GeneralLocations">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="place for switches"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchHospitals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:checked="false"
+                android:elevation="10dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="Hospitals"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches"
+                app:trackTintMode="src_in" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchLibraries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:checked="false"
+                android:elevation="10dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:scrollbarSize="10dp"
+                android:text="Libraries"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchSchoolsEducational"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:checked="false"
+                android:elevation="10dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="Schools and Educational Institutions"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchWorshipPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="10dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="Worship Places"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchGovernmentOffices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="10dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="Government Offices"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchTheaters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="10dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="Theaters"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchRestaurants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="10dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="Restaurants"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/on_off_box"
+                android:elevation="10dp"
+                android:fontFamily="@font/vigaregular"
+                android:padding="25dp"
+                android:text="Banks"
+                app:thumbTint="#FFFFFF"
+                app:track="@drawable/switches" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
